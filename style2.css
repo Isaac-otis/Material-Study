@@ -1,0 +1,253 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: black;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+h1 {
+  font: 110pt Arial, sans-serif;
+  color: white;
+  position: static;
+}
+h2 {
+  font: 60pt Georgia, serif;
+  color: white;
+  transform: rotate(26deg);
+  position: static;
+}
+h3 {
+  font: 30pt Arial, sans-serif;
+  color: white;
+  /* position: relative;
+    left: 670px; */
+  transform: rotate(62deg);
+  position: relative;
+  top: 300px;
+}
+.gif {
+  margin-left: 800px;
+}
+.hide2 {
+  display: none;
+  position: relative;
+  top:;
+  left: 340px;
+}
+.About:hover + .hide2 {
+  display: block;
+  font: 12pt Georgia, serif;
+  color: white;
+  position: relative;
+  max-width: 600px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  grid-auto-rows: 1fr;
+  text-align: center;
+  font: 24pt Georgia, serif;
+}
+
+.grid::before {
+  content: "";
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.grid > * {
+  border: px black solid;
+}
+.grid > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.one{
+  background-color: #fe323b;
+  color: black;
+}
+.two {
+  background-color: #f8aad1;
+  color: black;
+}
+.three {
+  background-color: #7c0007;
+  color: black;
+}
+.four {
+  background-color: #dfd5cb;
+  color: black;
+}
+.five {
+  background-color: #075534;
+  color: black;
+}
+.six {
+  background-color: #dcfb00;
+  color: black;
+}
+.seven {
+  background-color: #4138eb;
+  color: black;
+}
+.eight {
+  background-color: #c0ddf0;
+  color: black;
+}
+.nine {
+  background-color: #fe323b;
+  color: black;
+}
+.ten {
+  background-color: #f8aad1;
+  color: black;
+}
+.eleven {
+  background-color: #7c0007;
+  color: black;
+}
+.twelve {
+  background-color: #dfd5cb;
+  color: black;
+}
+.thirteen {
+  background-color: #075534;
+  color: black;
+}
+.fourteen {
+  background-color: #dcfb00;
+  color: black;
+}
+.fifteen {
+  background-color: #4138eb;
+  color: black;
+}
+.sixteen {
+  background-color: #c0ddf0;
+  color: black;
+}
+.seventeen {
+  background-color: #fe323b;
+  color: black;
+}
+.eighteen {
+  background-color: #f8aad1;
+  color: black;
+}
+.nineteen {
+  background-color: #7c0007;
+  color: black;
+}
+.twenty {
+  background-color: #dfd5cb;
+  color: black;
+}
+.twentyone {
+  background-color: #075534;
+  color: black;
+}
+.twentytwo {
+  background-color: #dcfb00;
+  color: black;
+}
+.twentythree {
+  background-color: #4138eb;
+  color: black;
+}
+.twentyfour {
+  background-color: #c0ddf0;
+  color: black;
+}
+.twentyfive {
+  background-color: #fe323b;
+  color: black;
+}
+.twentysix {
+  background-color: #f8aad1;
+  color: black;
+}
+.twentyseven {
+  background-color: #7c0007;
+  color: black;
+}
+.twentyeight {
+  background-color: #dfd5cb;
+  color: black;
+}
+.twentynine {
+  background-color: #075534;
+  color: black;
+}
+.thirty {
+  background-color: #dcfb00;
+  color: black;
+}
+.thirtyone {
+  background-color: #4138eb;
+  color: black;
+}
+.thirtytwo {
+  background-color: #c0ddf0;
+  color: black;
+}
+.thirtythree {
+  background-color: #fe323b;
+  color: black;
+}
+.thirtyfour {
+  background-color: #f8aad1;
+  color: black;
+}
+.thirtyfive {
+  background-color: #7c0007;
+  color: black;
+}
+.thirtysix {
+  background-color: #dfd5cb;
+  color: black;
+}
+
+.hide {
+  display: none;
+}
+.myDIV:hover + .hide {
+  display: block;
+  color: #b7c4dc;
+}
+
+/* customize the popup */
+* {
+  margin: -100;
+  padding: 0;
+}
+#popup_container {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  padding-top: 5%;
+  justify-content: center;
+  pointer-events: none;
+}
+#popup_container.hide {
+  display: none;
+}
+#item_number {
+  background: black;
+  color: white;
+  padding: 5px 10px;
+}
